@@ -208,8 +208,8 @@ document.body.addEventListener("click", (e) => {
 	// if (target.matches(".btn-back")) return window.location.reload();
 
 	if (target.matches(".icon-search")) {
-		const searchValue = inputSearch.value.toLowerCase();
-
+		const searchValue = inputSearch.value.trim().toLowerCase();
+		deletePagination();
 		return searchForCountries(searchValue);
 	}
 
