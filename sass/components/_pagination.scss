@@ -1,0 +1,17 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+
+	&__page {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.8rem;
+
+		color: $color-white;
+		width: 3rem;
+		height: 3rem;
+	}
+}

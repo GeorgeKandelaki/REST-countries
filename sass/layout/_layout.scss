@@ -1,0 +1,55 @@
+.content {
+	padding: 4.8rem 6.4rem;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 6.4rem;
+		grid-row: 1 / 2;
+		grid-column: 1 / -1;
+	}
+
+	&__search {
+		width: 35%;
+		position: relative;
+
+		&-input {
+			width: 75%;
+			color: $color-white;
+			background-color: $color-blue-dark-1;
+			font-size: 1.4rem;
+			padding: 2.2rem 4.8rem;
+			border: none;
+			border-radius: 0.5rem;
+			box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+			transition: all 0.5s;
+
+			&:focus {
+				outline: none;
+				width: 100%;
+			}
+
+			&::placeholder {
+				color: $color-white;
+			}
+		}
+
+		.icon-search {
+			position: absolute;
+			top: 50%;
+			left: 2%;
+			transform: translateY(-45%);
+			cursor: pointer;
+		}
+	}
+}
+
+.countries {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
+	justify-content: center;
+	grid-column-gap: 4.8rem;
+	grid-row-gap: 6.4rem;
+	margin-bottom: 6.4rem;
+}

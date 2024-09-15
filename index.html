@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rest Countries</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/index.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="heading-primary"><a href="/">Where in the world?</a></h1>
+			<div class="header__dark-mode-box">
+				<img src="/assets/icon-moon.svg" alt="Image of the Moon" />
+				<span>Dark Mode</span>
+			</div>
+		</header>
+
+		<main class="content">
+			<header class="content__header">
+				<div class="content__search">
+					<input
+						id="search"
+						class="content__search-input"
+						type="text"
+						placeholder="Search for a country..."
+					/>
+					<label for="search" class="icon-search"
+						><img src="/assets/icon-search.svg" alt="Image of an Search Button" class="icon-search" />
+					</label>
+				</div>
+
+				<div class="filter">
+					<div class="filter__text">Filter by Region</div>
+
+					<div class="filter__selection content--hidden-2">
+						<span class="filter__item" data-value="Africa">Africa</span>
+						<span class="filter__item" data-value="Americas">America</span>
+						<span class="filter__item" data-value="Asia">Asia</span>
+						<span class="filter__item" data-value="Europe">Europe</span>
+						<span class="filter__item" data-value="Oceania">Oceania</span>
+					</div>
+				</div>
+			</header>
+
+			<div class="countries"></div>
+
+			<div class="pagination">
+				<button class="btn btn-pagination btn-pagination--prev content--hidden-1">&lt;</button>
+				<span class="pagination__page">1</span>
+				<button class="btn btn-pagination btn-pagination--next">&gt;</button>
+			</div>
+		</main>
+	</body>
+</html>

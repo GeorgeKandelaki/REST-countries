@@ -1,0 +1,22 @@
+.header {
+	background-color: $color-blue-dark-1;
+	padding: 2.4rem 6.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+	a {
+		color: $color-white;
+	}
+
+	&__dark-mode-box {
+		display: flex;
+		align-items: center;
+	}
+
+	span {
+		color: $color-white;
+		font-weight: 600;
+	}
+}

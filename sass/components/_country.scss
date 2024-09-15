@@ -1,0 +1,43 @@
+.country {
+	background-color: $color-blue-dark-1;
+	border-radius: 0.5rem;
+	overflow: hidden;
+
+	&__img-box {
+		width: 100%;
+		height: 20rem;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__name {
+		margin-bottom: 1.5rem;
+		cursor: pointer;
+		display: inline-block;
+		transition: all 0.2s;
+
+		&:hover {
+			transform: translateY(3px);
+			color: black;
+		}
+	}
+
+	&__info {
+		padding: 2rem 2rem 3rem 2rem;
+	}
+
+	&__population,
+	&__region,
+	&__capital {
+		color: $color-white;
+		font-weight: 300;
+
+		span {
+			font-weight: 600;
+			margin-right: 0.5rem;
+		}
+	}
+}

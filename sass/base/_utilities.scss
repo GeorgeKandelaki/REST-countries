@@ -1,0 +1,9 @@
+.content--hidden-1 {
+	display: none !important;
+}
+
+.content--hidden-2 {
+	transform: translateY(-100%);
+	pointer-events: none;
+	visibility: hidden;
+}

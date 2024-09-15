@@ -1,0 +1,42 @@
+.filter {
+	color: $color-white;
+	position: relative;
+
+	&__text {
+		background-color: $color-blue-dark-1;
+		padding: 2rem 6.4rem 2rem 2.5rem;
+		border: none;
+		border-radius: 0.5rem;
+		color: $color-white;
+		box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+		cursor: pointer;
+
+		background-image: url(../assets/icon-dropdown.svg);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+
+	&__selection {
+		position: absolute;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		cursor: pointer;
+
+		background-color: $color-blue-dark-1;
+		padding: 1.5rem 2.5rem;
+		margin-top: 0.5rem;
+		border-radius: 0.5rem;
+		transition: transform 0.3s, visibility 0.1s;
+	}
+
+	&__item {
+		transition: opacity 0.4s;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
